@@ -97,3 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b39e12ac084874aba1553e619bd75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  particleEffect: {fileID: 2609642944898786834, guid: e2fd44b17f4be4f93b40f1a96b629121, type: 3}
+  munch: {fileID: 0}

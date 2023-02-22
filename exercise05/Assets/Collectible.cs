@@ -7,9 +7,8 @@ using TMPro;
 public class Collectible : MonoBehaviour
 {
     float score;
-    public TextMeshProUGUI scoreText;
+    public TextMeshPro scoreText;
     public GameObject particleEffect;
-    public AudioSource munch;
     //public var destroyDelay = 3.0;
 
     // Start is called before the first frame update
@@ -30,15 +29,15 @@ public class Collectible : MonoBehaviour
         {
             score += 1;
             Instantiate(particleEffect, other.gameObject.transform.position, other.gameObject.transform.rotation);
-            munch.Play();
+       
             Destroy(other.gameObject);
-            //DestroyParticles();
+            DestroyParticles();
         }
     }
 
-    //function DestroyParticles()
-    //{
-    //    yield WaitForSeconds(destroyDelay);
-    //    Destroy(particleEffect)
-    //}
+    private void DestroyParticles()
+    {
+
+        Destroy(particleEffect);
+    }
 }
