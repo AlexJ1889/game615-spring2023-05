@@ -6,9 +6,9 @@ using TMPro;
 
 public class Collectible : MonoBehaviour
 {
-    float score;
-    public TextMeshPro scoreText;
+    public TMP_Text scoreText;
     public GameObject particleEffect;
+    int score; 
     //public var destroyDelay = 3.0;
 
     // Start is called before the first frame update
@@ -20,17 +20,18 @@ public class Collectible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Brushes: " + score;
+     
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("collectible"))
+        if (other.gameObject.CompareTag("Collectible"))
         {
             score += 1;
+            SetScoreText(); 
             Instantiate(particleEffect, other.gameObject.transform.position, other.gameObject.transform.rotation);
        
-            Destroy(other.gameObject);
+            Destroy(other.gameObject, 0.25f);
             DestroyParticles();
         }
     }
@@ -39,5 +40,10 @@ public class Collectible : MonoBehaviour
     {
 
         Destroy(particleEffect);
+    }
+
+    void SetScoreText()
+    {
+        scoreText.text = "Brushes: " + score;
     }
 }

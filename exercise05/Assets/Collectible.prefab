@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8538385366053008871}
   - component: {fileID: 8538385366053008868}
   - component: {fileID: 8538385366053008869}
-  - component: {fileID: -3502685760369136495}
+  - component: {fileID: 7736909837603550290}
+  - component: {fileID: 437236952379579615}
   m_Layer: 0
   m_Name: Collectible
   m_TagString: Collectible
@@ -85,7 +86,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-3502685760369136495
+--- !u!136 &7736909837603550290
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538385366053008866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0039195577
+  m_Height: 0.00080590893
+  m_Direction: 1
+  m_Center: {x: 0.0000000020757045, y: 1.2469438e-10, z: 0.0034802856}
+--- !u!114 &437236952379579615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,4 +114,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   particleEffect: {fileID: 2609642944898786834, guid: e2fd44b17f4be4f93b40f1a96b629121, type: 3}
-  munch: {fileID: 0}
