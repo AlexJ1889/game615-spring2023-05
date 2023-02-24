@@ -2,7 +2,7 @@
 
  Team: Alex and Sara
 
-[Playable link to game](https://SaraHashemii.github.io/game615-spring2023-05/exercise05/play/)
+[Playable link to game](https://alexj1889.github.io/game615-spring2023-05/exercise05/play/)
 
 Lamp by Alex Safayan [CC-BY] via Poly Pizza,
 Rug by Poly by Google [CC-BY] via Poly Pizza,
